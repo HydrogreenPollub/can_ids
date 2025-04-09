@@ -1,7 +1,7 @@
 #ifndef CAN_IDS_H
 #define CAN_IDS_H
 
-enum can_ids {
+typedef enum can_id_t {
     CAN_ID_IS_EMERGENCY = 0x100,
     CAN_ID_IS_EMERGENCY_BUTTON_PRESSED = 0x101,
     CAN_ID_IS_EMERGENCY_SWITCH_TOGGLED = 0x102,
@@ -36,6 +36,6 @@ enum can_ids {
     CAN_ID_MC_CURRENT = 0x11C,
 
     CAN_ID_LAP_NUMBER = 0x11D
-};
+} can_id_t;
 
 #endif
