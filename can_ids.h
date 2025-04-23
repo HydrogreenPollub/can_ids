@@ -1,10 +1,6 @@
 #ifndef CAN_IDS_H
 #define CAN_IDS_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 typedef enum can_id_t {
     CAN_ID_IS_EMERGENCY = 0x100,
     CAN_ID_IS_EMERGENCY_BUTTON_PRESSED = 0x101,
@@ -41,9 +37,5 @@ typedef enum can_id_t {
 
     CAN_ID_LAP_NUMBER = 0x11D
 } can_id_t;
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif
